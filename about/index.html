@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html class="flex min-h-full">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-site-verification" content="i7Zcd4VE6mdqs2t1pb_kquaAQI_WItbWMOAt7_t0AYo" />
     <title>About &ndash; Async</title>
     <link rel="author" href="/humans.txt">
@@ -14,17 +14,12 @@
     <meta name="twitter:site" content="@asyncjs" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="/css/global.css" />
-    <!-- Google Analytics -->
-    <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-2150808-14', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <script async src='//www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="DCQSDYFP" defer></script>
+    <!-- / Fathom -->
   </head>
-  <body>
-    <div class="wrapper">
+  <body class="flex-1">
+    <div class="wrapper flex-1">
       <header class="masthead">
         <h1 class="main-header">
           <a href="/">
@@ -45,6 +40,11 @@
               </a>
             </li>
             <li>
+              <a href="/news" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 9h-16v1h16v-1zm-12 2h-4v1h4v-1zm0 2h-4v1h4v-1zm12-2h-4v1h4v-1zm0 2h-4v1h4v-1zm0 2h-16v1h16v-1zm-5-4h-6v3h6v-3zm7-7v14h-20v-14h20zm2-2h-24v20h24v-20zm-11.832 5.972l-.46-1.941h.505l.24 1.345.27-1.345h.492l.238 1.32.249-1.32h.482l-.501 1.941h-.5l-.238-1.284-.271 1.284h-.506zm-.579-.396h-.78v-.406h.698v-.393h-.698v-.35h.74v-.396h-1.215v1.941h1.255v-.396zm3.257.028c-.149 0-.324-.043-.466-.116l-.024-.013-.098.398.015.008c.102.058.318.119.547.119.581 0 .788-.328.788-.61 0-.272-.161-.458-.507-.586-.254-.096-.338-.145-.338-.247 0-.098.1-.161.254-.161.136 0 .266.03.388.088l.023.011.107-.39-.015-.007c-.145-.065-.311-.098-.495-.098-.442 0-.739.239-.739.593 0 .262.181.458.535.581.227.081.304.144.304.247 0 .117-.102.183-.279.183zm-6.016-.959l.691 1.327h.485v-1.941h-.438v1.189l-.64-1.189h-.536v1.941h.438v-1.327z"/></svg><span class="text">News</span>
+              </a>
+            </li>
+            <li>
               <a href="/about" class="active">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18h-2v-8h2v8zm-1-12.25c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25.56-1.25 1.25-1.25z"/></svg><span class="text">About</span>
               </a>
@@ -55,26 +55,30 @@
       
 <img class="about-hero" src="/img/people/hero.jpg" />
 
-<div class="container">
-  <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18h-2v-8h2v8zm-1-12.25c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25.56-1.25 1.25-1.25z"/></svg>About</h1>
-  <section class="module about">
-    <h2 class="module-heading">
-      What is Async?
-    </h2>
+<div class="max-w-screen-lg mx-auto px-4">
+  <h1 class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18h-2v-8h2v8zm-1-12.25c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25.56-1.25 1.25-1.25z"/></svg>About</h1>
+  <section class="module prose about">
+    <h2 class="module-heading">What is Async?</h2>
     <p>
-      Async is an inclusive web tech meetup based in Brighton. Since 2010 we have been the place for people in and around Brighton who are interested in web technologies to learn, discuss, and play with web technologies.
+      Async is an inclusive web tech meetup based in Brighton. Since 2010 we
+      have been the place for people in and around Brighton who are interested
+      in web technologies to learn, discuss, and play with web technologies.
     </p>
     <p>
-      We host monthly talks, hack nights, show n' tells and community events, all of which are free and open to everyone, from experienced developers to those learning to code.
+      We host monthly talks, hack nights, show n' tells and community events,
+      all of which are free and open to everyone, from experienced developers to
+      those learning to code.
     </p>
     <p>
-      Whether you’re Brighton-based, or from further afield; an experienced developer, or someone looking to learn, we encourage you to come along and become part of our community. Everybody is welcome!
+      Whether you're Brighton-based, or from further afield; an experienced
+      developer, or someone looking to learn, we encourage you to come along and
+      become part of our community. Everybody is welcome!
     </p>
+    <p>You can read our code of conduct <a href="/codeofconduct">here</a>.</p>
     <p>
-      You can read our code of conduct <a href="/codeofconduct">here</a>.
-    </p>
-    <p>
-      Local companies are welcome to sponsor our monthly gatherings too. If you'd like to sponsor one of our events you can send us an email: <a href="mailto:hello@asyncjs.com">hello@asyncjs.com</a>.
+      Local companies are welcome to sponsor our monthly gatherings too. If
+      you'd like to sponsor one of our events you can send us an email:
+      <a href="mailto:hello@asyncjs.com">hello@asyncjs.com</a>.
     </p>
 
     <div class="photo-grid">
@@ -84,14 +88,19 @@
       <img src="/img/people/5.jpg" />
     </div>
 
-    <h2 class="module-heading">
-      When and where?
-    </h2>
+    <h2 class="module-heading">When and where?</h2>
     <p>
-      We meet on the first Thursday of the month at <a target="_blank" href="https://www.theskiff.org/">The Skiff</a>, which is wheelchair accessible.
+      We meet on the first Thursday of the month at
+      <a target="_blank" href="https://runwayea.st/locations/brighton?utm_source=external&utm_medium=event&utm_campaign=sponsorship">Runway East - Brighton</a>, which
+      is wheelchair accessible.
     </p>
     <p>
-      Doors open 7.15pm, with food and drink provided by a sponsor on some occasions (contact us beforehand if you have any dietary requirements, and feel free to bring your own). The talk begins at 7.45pm, we usually end around 9.30pm and often continue nearby for an informal evening social where people will have a chance to chat with the speaker and other attendees.
+      Doors open 7.00pm, with food and drink provided by a sponsor on some
+      occasions (contact us beforehand if you have any dietary requirements, and
+      feel free to bring your own). The talk begins at 7.30pm, we usually end
+      around 9.00pm and often continue nearby for an informal evening social
+      where people will have a chance to chat with the speaker and other
+      attendees.
     </p>
 
     <div class="photo-grid">
@@ -101,39 +110,48 @@
       <img src="/img/people/3.jpg" />
     </div>
 
-    <h2 class="module-heading">
-      Want to know more?
-    </h2>
-    <p>
-      There are a few ways to find out more about us:
-    </p>
-    <ul>
-      <li>Our monthly gathering, held on the first Thursday of the month at <a target="_blank" href="https://www.theskiff.org/">The Skiff</a></li>
-      <li>Our <a target="_blank" href="https://twitter.com/asyncjs">Twitter account</a></li>
-      <li>Our <a target="_blank" href="https://www.meetup.com/Async-Web-Tech-Meetup/">Meetup group</a></li>
-      <!--li>Our Google group for email</li-->
-      <li>Our <a href="mailto:hello@asyncjs.com?Subject=Please%20add%20me%20to%20the%20Async%20Slack%20channel">Slack group</a></li>
-      <li>You can contact us via email: <a href="mailto:hello@asyncjs.com">hello@asyncjs.com</a></li>
+    <h2 class="module-heading">Want to know more?</h2>
+    <p>There are a few ways to find out more about us:</p>
+    <ul style="list-style: default">
+<li>
+            <a href="https://twitter.com/asyncjs" target="_blank">Follow @asyncjs on Twitter</a>
+          </li>
+<li>
+            <a href="https://www.facebook.com/asyncjs/" target="_blank">Like our page on Facebook</a>
+          </li>
+<li>
+            <a href="https://www.youtube.com/AsyncBrighton" target="_blank">Subscribe to our YouTube channel</a>
+          </li>
+<li>
+            <a href="https://join.slack.com/t/asyncjs/shared_invite/zt-1aguxx86q-XjF_yWcFoJ8fyYYzoqgDaQ" target="_blank">Join the Async Slack group</a>
+          </li>
+<li>
+            <a href="https://www.meetup.com/Async-Web-Tech-Meetup/" target="_blank">Join our meetup group</a>
+          </li>
+<li>
+            <a href="https://github.com/asyncjs/async-website" target="_blank">Fork this site on GitHub</a>
+          </li>
     </ul>
 
     <p>
-      We also have close ties with <a target="_blank" href="https://codebar.io/brighton">Codebar Brighton</a> - a non-profit initiative that facilitates the growth of a diverse tech community by running regular programming workshops.
-      Many students who come through Codebar have gone on to work locally and have become Async regulars.
+      We also have close ties with
+      <a target="_blank" href="https://codebar.io/brighton">Codebar Brighton</a>
+      - a non-profit initiative that facilitates the growth of a diverse tech
+      community by running regular programming workshops. Many students who come
+      through Codebar have gone on to work locally and have become Async
+      regulars.
     </p>
-
   </section>
 </div>
 
       <footer class="footer">
-        <div class="container">
+        <div class="max-w-screen-lg mx-auto px-4">
           <ul class="links">
-              <li><a href="https://www.meetup.com/Async-Web-Tech-Meetup/" title="Join our meetup group">Meetup</a></li>
-              <li><a href="/news/" title="Recent Async Announcements">News</a></li>
-              <li><a href="http://groups.google.com/group/asyncjs/" title="Email list on Google Groups">Mailing List</a></li>
-              <li><a href="/feed/" title="Subscribe to the website&#x27;s Atom feed">Subscribe to feed</a></li>
-              <li><a href="http://feedburner.google.com/fb/a/mailverify?uri&#x3D;asyncjs" title="Subscribe to email updates for the website">Subscribe by email</a></li>
-              <li><a href="mailto:hello@asyncjs.com" title="Get in touch">Email Us</a></li>
-              <li><a href="/codeofconduct/" title="View our Code of Conduct">Code of Conduct</a></li>
+      <li><a href="https://www.meetup.com/Async-Web-Tech-Meetup/" title="Join our meetup group">Meetup</a></li>
+      <li><a href="/feed/" title="Subscribe to the website&#x27;s Atom feed">Subscribe to feed</a></li>
+      <li><a href="mailto:hello@asyncjs.com" title="Get in touch">Email Us</a></li>
+      <li><a href="https://app.usefathom.com/share/dcqsdyfp/asyncjs.com" title="Analytics powered by Fathom">Analytics</a></li>
+      <li><a href="/codeofconduct/" title="View our Code of Conduct">Code of Conduct</a></li>
           </ul>
       
           <p class="credits">
@@ -144,27 +162,7 @@
           </p>
         </div>
       </footer>
-      <div id="media-test"></div>
       <script src="/js/main.js"></script>
-    </div>
-
-    <div class="alert-banner">
-      <h3>
-        Sorry, all in person events are cancelled until further notice.
-      </h3>
-      <p>
-        We're taking precautions due to the increasing risk of <a target="_blank" href="https://www.gov.uk/government/topical-events/coronavirus-covid-19-uk-government-response">COVID-19 (Coronavirus)</a>, and unfortunately will not be running any in person events until further notice.
-      </p>
-      <p>
-        We will, however, be organising and running online events in the meantime.
-      </p>
-      </p>
-      <p>
-        We apologise, and look forward to seeing you when our regularly scheduled meetups resume.
-      </p>
-      <p>
-        Subscribe to our <a href="http://groups.google.com/group/asyncjs/">Mailing list</a> for updates on the situation.
-      </p>
     </div>
   </body>
 </html>
